@@ -1,0 +1,352 @@
+@media (min-width: 1213px), (max-width: 1920px) {
+    /* Стили для экранов меньше 768 пикселей */   
+    body {
+
+        font-family: 'Monomaniac One';
+        padding: 0;
+        margin: 0;
+        font-size: 16px;
+        background: linear-gradient(122.23deg, #EDC9AF 10.06%, #DEA277 87.62%);
+
+    }
+
+    ul, li{
+        display: flex;
+    }
+
+/* шапка */
+    .logo {
+        margin-left: 280px;
+        color: #5C90DE;
+        width: 46px;
+    }
+
+    .header a, p {
+        color: #B7B7B7;
+    }
+
+    .nav{
+        background-color: #272727;
+        display: flex;
+    }
+
+    .container {
+        margin: 0 auto;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    .menu li a {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #B7B7B7;
+    }
+
+    .menu li {
+        margin-right: 65px;
+
+    }
+    /* Подчеркивание кнопак
+        Start */
+    .menu a {
+        position: relative;
+        color: #484848;
+        text-decoration: none;
+    }
+    
+    .menu a::before {
+        content: '';
+        position: absolute;
+        left: 0; bottom: -5px;
+        width: 0;
+        height: 2px;
+        border-radius: 8px;
+        background: linear-gradient(177deg, #F5493E 0%, #820800 100%);
+    }
+    
+    .menu a:hover:before {
+        width: 100%;
+    }
+    
+    .menu a::before {
+        transition: width 0.35s;
+    }
+    /* End */
+
+    .sup {
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    .compani-p {
+        padding-left: 8px;
+        font-size: 15px;
+        font-style: normal;
+        color: #FFFFFF;
+    }
+
+    .vect {
+        padding-left: 5px;
+    }
+
+    .rect {
+        padding-right: 10px;
+    }
+
+    /* Основной контент  */
+
+    .name-games {
+        font-family: 'Bebas Neue';
+        display: flex;
+        font-size: 20px;
+        letter-spacing: 0.090em;
+
+        margin: 350px 611px 0px 1100px;
+
+        color: rgba(48, 48, 48, 0.22);
+    }
+
+    .info {
+        margin-left: 1100px;
+        margin-bottom: 10px;
+        margin-top: -5px;
+
+        background: linear-gradient(95.62deg, #EE5A5A 18.76%, #AB3B3B 96.09%, #FFE0E0 96.1%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        
+        font-style: normal;
+        font-weight: 800;
+        font-size: 36px;
+        letter-spacing: 0.095em;
+    }
+
+    .numv {
+        position: absolute;
+        width: 52px;
+        height: 58px;
+        left: 295px;
+        top: 370px;
+
+        font-family: 'Bebas Neue';
+        z-index: -3;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+        letter-spacing: 0.100em;
+    }
+
+    .line {
+        background-color: #E14F4F;
+        width: 70px;
+        height: 4px;
+        border-radius: 17px;
+        z-index: -3;
+
+        position: absolute;
+        left: 275px;
+        top: 410px;
+    }
+
+    .Y-txt {
+        font-family: 'Bedas Neue';
+        color: rgba(48, 48, 48, 0.22);
+        z-index: -3;
+
+        position: absolute;
+        left: 198px;
+        top: 524px;
+        transform: rotate(90deg); 
+    }
+
+    .bnt {
+        box-sizing: border-box;
+        margin: 10px 10px 200px 1100px;
+        width: 143.21px;
+        height: 25px;
+        color: #FFFFFF;
+        box-shadow: -1px 4px 16px -2px rgba(102, 102, 102, 0.66);
+    }
+
+    .txr-bnt {
+        font-family: 'Bebas Neue';
+
+        font-style: normal;
+        font-weight: 800;
+        font-size: 16px;
+        align-items: flex-end;
+        letter-spacing: 0.095em;
+
+        background: linear-gradient(270.94deg, #E14F4F 19.83%, #EF7474 97.62%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        
+    }
+
+    .bnt:hover {
+        opacity: 0.8;
+    }
+      
+    .bnt:active {
+        transform: scale(0.95);
+    }
+
+
+    .bnt-lern-more {
+
+        box-sizing: border-box;
+        width: 143.21px;
+        height: 25px;
+        color: #FFFFFF;
+        box-shadow: -1px 4px 16px -2px rgba(102, 102, 102, 0.66);
+
+    }
+
+
+    .txt-bnt-learn-more {
+        font-family: 'Bebas Neue';
+
+        font-style: normal;
+        font-weight: 800;
+        font-size: 16px;
+        align-items: flex-end;
+        letter-spacing: 0.095em;
+
+        background: linear-gradient(270.94deg, #E14F4F 19.83%, #EF7474 97.62%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+    
+    .bnt-lern-more:hover {
+        opacity: 0.8;
+    }
+      
+    .bnt-lern-more:active {
+        transform: scale(0.95);
+    }
+
+
+    
+    .slider {
+        position: absolute;
+        width: 710px;
+        height: 1200px;
+        left: 350px;
+        right: 38px;
+        top: 30px;
+        z-index: -5;
+    }
+    .imageAnimeArt-Aria {
+        top: 30px;
+        z-index: -5;
+    }
+   
+    .hidden {
+        display: none;
+
+    }
+
+
+    .navigate {
+
+        width: 1000px;
+        height: 43px;
+        
+    }
+
+    .img-button {
+
+        width: 42px;
+        height: 43px;
+        margin-left: 35%;
+        z-index: 5;
+     
+        border: none;
+        background-image: url('batton-art\ games\ caractes.svg');
+        background-size: cover;
+
+    }
+
+    .img-button-right {
+        
+        width: 42px;
+        height: 43px;
+        margin-left: 55%;
+        z-index: 5;
+
+        border: none;
+        background-image: url('batton-art\ games\ caractes\ \(1\).svg');
+        background-size: cover;
+
+    }
+
+    .img-button:hover {
+        opacity: 0.8;
+    }
+      
+    .img-button:active {
+        transform: scale(0.95);
+    }
+
+    .img-button-right:hover {
+        opacity: 0.8;
+    }
+      
+    .img-button-right:active {
+        transform: scale(0.95);
+    }
+
+
+
+
+/* Подвал  */
+    .masenger {
+        background: #363030;
+        height: 50px;
+    }
+
+    .teleg {
+        margin-top: 5px;  
+        margin-left: 40%;
+        width: 40px;
+
+    }
+
+    .youtube {
+        margin-top: 5px;  
+        padding-left: 2%;
+        width: 40px;
+    }
+
+    .vk {
+        margin-top: 5px;  
+        padding-left: 2%;
+        width: 40px;
+    }
+
+    .footer {
+        margin-top: 15%;
+        height: 40%;
+    }
+
+    .foot {
+        z-index: 1;
+        background-color: #272727;
+        height: 150px;
+    }
+
+    .logo-2 {
+        padding-left: 15%;
+    }
+
+    .foot-name-compani {
+        color: #FFFFFF;
+        padding-left: 18%;
+        margin-top: -2%;
+    }
+}
