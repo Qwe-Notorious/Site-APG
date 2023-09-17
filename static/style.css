@@ -1,13 +1,9 @@
-@media (min-width: 1213px), (max-width: 1920px) {
-    /* Стили для экранов меньше 768 пикселей */   
     body {
-
         font-family: 'Monomaniac One';
         padding: 0;
         margin: 0;
-        font-size: 16px;
+        font-size: 20px;
         background: linear-gradient(122.23deg, #EDC9AF 10.06%, #DEA277 87.62%);
-
     }
 
     ul, li{
@@ -19,13 +15,15 @@
         margin-left: 280px;
         color: #5C90DE;
         width: 46px;
+        margin-top: 3%;
     }
 
     .header a, p {
         color: #B7B7B7;
     }
 
-    .nav{
+    .nav {
+
         background-color: #272727;
         display: flex;
     }
@@ -80,10 +78,11 @@
         text-decoration: none;
     }
 
-    .compani-p {
+    .name-compani {
+        padding-top: 0.5%;
         padding-left: 8px;
         font-size: 15px;
-        font-style: normal;
+        /* font-style: normal; */
         color: #FFFFFF;
     }
 
@@ -128,8 +127,8 @@
         position: absolute;
         width: 52px;
         height: 58px;
-        left: 295px;
-        top: 370px;
+        left: 290px;
+        top: 270px;
 
         font-family: 'Bebas Neue';
         z-index: -3;
@@ -147,8 +146,8 @@
         z-index: -3;
 
         position: absolute;
-        left: 275px;
-        top: 410px;
+        left: 265px;
+        top: 315px;
     }
 
     .Y-txt {
@@ -157,14 +156,14 @@
         z-index: -3;
 
         position: absolute;
-        left: 198px;
-        top: 524px;
+        left: 160px;
+        top: 455px;
         transform: rotate(90deg); 
     }
 
     .bnt {
         box-sizing: border-box;
-        margin: 10px 10px 200px 1100px;
+        margin: 10px 10px 0px 1100px;
         width: 143.21px;
         height: 25px;
         color: #FFFFFF;
@@ -197,7 +196,6 @@
 
 
     .bnt-lern-more {
-
         box-sizing: border-box;
         width: 143.21px;
         height: 25px;
@@ -233,30 +231,213 @@
 
     
     .slider {
+
         position: absolute;
         width: 710px;
         height: 1200px;
         left: 350px;
         right: 38px;
-        top: 30px;
+        top: 15%;
         z-index: -5;
+        
     }
-    .imageAnimeArt-Aria {
-        top: 30px;
-        z-index: -5;
+    
+    .image-art-1 {
+        transition: transform 0.2s;
     }
+
+    .image-art-1 :hover {
+        transform: scale(5);
+    }
+    
    
     .hidden {
         display: none;
+    }
+
+    
+    /* Модолная коробка start */
+    .popup {
+        display: none;
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; 
+        height: 100%;       
+        background: rgba(0, 0, 0, 0.80);
+        overflow: auto;
+    }
+
+    .close {
+        background-image: url("close.svg");
+        margin-left: 90%;
+        width: 50px;
+        height: 50px;
+        border: none;
+        background-size: cover;
+        background-color: transparent;
+    }
+
+    .close:hover {
+        opacity: 0.8;
+    }
+      
+    .close:active {
+        transform: scale(0.95);
+    }
+
+    .charactes-info {
+        width: 800px;
+        height: 1097px;
+        flex-shrink: 0;
+        float: right;
+
+        border-radius: 39px;
+        box-shadow: 0px 0px 50px 0px #000;
+    }
+
+    .imag-abilities img {
+        width: 200px;
+        height: 150px;
+        flex-shrink: 0;
+        padding-left: 7%;
+        
+    }
+
+    .info-text-abilities-charactes {
+        color: #FFF;
+        font-family: "Bebas Neue";
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 3.8px;
+        padding-left: 5%; 
+    }
+
+    .skills-info {
+        width: 326px;
+        height: 75.366px;
+        color: #FFF;
+        flex-direction: column;
+        padding-left: 4%;
+        padding-top: 10%;
+        font-family: "Bebas Neue";
+        font-size: 35px;
+        font-weight: 400;
+        letter-spacing: 3.325px;
 
     }
 
+    .charactes-info {
+        color: #FFF;
+        font-size: 15px;
+    }
 
+    .charactes-skills-info {
+
+        width: 234px;
+        height: 16px;
+        text-align: justify;
+        padding-bottom: 7%;
+        color: #FFF;
+        font-size: 15px;
+        font-weight: 400;
+        
+
+    }
+
+    .popup::-webkit-scrollbar-track
+    {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        background-color: #F5F5F5;
+    }
+
+    .popup::-webkit-scrollbar
+    {
+        width: 0.5px;
+        background-color: #F5F5F5;
+    }
+
+    .popup::-webkit-scrollbar-thumb
+    {
+        border-radius: 900px;
+        background: linear-gradient(135deg, #888CFE 40.63%, #2D42FF 69.27%);
+    }
+
+    .Character-History {
+        width: 326px;
+        height: 75.366px;
+        color: #FFF;
+        flex-direction: column;
+        padding-left: 5%;
+        padding-top: 340px;
+        font-family: "Bebas Neue";
+        font-size: 40px;
+        letter-spacing: 3.325px;
+    }
+
+    .histori-Aria {
+        width: 682px;
+        height: 124px;
+        flex-shrink: 0;
+        color: #FFF;
+        font-size: 23px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 2.375px;
+    }
+
+    .abilition-punh-1 {
+        width: 502px;
+        height: 63px;
+        flex-shrink: 0;
+        padding-left: 5%;
+        padding-top: 3%;
+        color: #FFF;
+        font-size: 23px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 2.375px;
+    }
+
+    .abilition-punh-2 {
+        width: 413px;
+        height: 32px;
+        flex-shrink: 0;
+        padding-left: 5%;
+        padding-top: 5%;
+        color: #FFF;
+        font-size: 23px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 2.375px;
+    }
+
+    .abilition-punh-3 {
+        width: 494px;
+        height: 87px;
+        flex-shrink: 0;
+        padding-left: 5%;
+        padding-top: 5%;
+        color: #FFF;
+        font-size: 23px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 2.375px;
+    }
+    /* Модолная коробка end */
+    
     .navigate {
-
         width: 1000px;
         height: 43px;
-        
+        padding-top: 30%;
     }
 
     .img-button {
@@ -265,7 +446,7 @@
         height: 43px;
         margin-left: 35%;
         z-index: 5;
-     
+        
         border: none;
         background-image: url('batton-art\ games\ caractes.svg');
         background-size: cover;
@@ -311,37 +492,18 @@
     }
 
     .teleg {
-        margin-top: 5px;  
-        margin-left: 40%;
-        width: 40px;
-
+        height: 40px;
+        text-align: center;
     }
 
-    .youtube {
-        margin-top: 5px;  
-        padding-left: 2%;
-        width: 40px;
-    }
-
-    .vk {
-        margin-top: 5px;  
-        padding-left: 2%;
-        width: 40px;
-    }
-
-    .footer {
-        margin-top: 15%;
-        height: 40%;
-    }
-
-    .foot {
+    .foother-nav-info {
         z-index: 1;
         background-color: #272727;
-        height: 150px;
+        height: 400%;
     }
 
     .logo-2 {
-        padding-left: 15%;
+        margin-left: 15%;
     }
 
     .foot-name-compani {
@@ -349,4 +511,7 @@
         padding-left: 18%;
         margin-top: -2%;
     }
-}
+
+    .footer {
+        padding-top: 2%;
+    }

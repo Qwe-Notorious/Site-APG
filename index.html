@@ -3,26 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="msapplication-navbutton-color" content="#36A26B">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link media="screen" rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="static/scroll.CSS">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Monomaniac+One&display=swap" rel="stylesheet">
     <link rel="icon" href="img/logo.png" type="image/x-icon">
-    <title>Aria Project Games</title>  
+    <title>Aria Project Games</title>
 </head>
 <body> 
     <header class="header">
         <div class="container">
             <div class="nav">
-                <img src="img/logo-1.svg" alt="" class="logo">
-                <p class="compani-p">ARIA PROJECT GAMES</p>
+                <a href="index.html"><img src="img/logo-1.svg" alt="" class="logo"></a>
+                <p class="name-compani">ARIA PROJECT GAMES</p>
                 <ul class="menu">
                     <li>
-                        <a href="#">
+                        <a href="aboutUS.html">
                             ABOUT US
                         </a>
                     </li>
@@ -47,33 +48,76 @@
                         </a>
                     </li>
                 </ul> 
-                <img src="img/Rectangle 10.svg" alt="" class="rect">
-                <p>EN<img src="img/Vector 1.svg" alt="" class="vect"></p>
+                <img src="img/Rectangle 10.svg" class="rect">
+                <p>EN<img src="img/Vector 1.svg" class="vect"></p>
             </div>
         </div>
     </header>
     <section class="img-game">
         <div class="container">
-            <h1 class="numv">01</h1>
-            <p class="line"></p>
-            <h1 class="Y-txt">CHARACTES: ARIA</h1>
             <p class="name-games">OUR GAMES</p>
-            <h1 class="info">THE UMPRASING <br> ARIA</h1>
+            <h1 class="info">CUBER SOUL<br> DIGITAL DYSTOPIA</h1>
             <button class="bnt">
                 <small class="txr-bnt">
                     BUY
                 </small>
             </button>
-            <button class="bnt-lern-more">
-                <small class="txt-bnt-learn-more ">
-                    LEARN MORE 
-                </small>
+            <button class="bnt-lern-more" id="bnt_Lern_more">
+                <small class="txt-bnt-learn-more ">LEARN MORE</small>
             </button>
-            <div class="slider" id="slider">
-                <img src="img/img2.png" alt="">
-                <img src="img/img-new-dising 3.png" alt="" class="imageAnimeArt-Aria">
-                <img src="img/img-new-dising2 1.png" alt="">
+            <div class="popup" id="popo">
+                <div class="scroll">
+                    <div class="charactes-info">
+                        <button class="close" id="close"></button>
+                        <div class="info-text-abilities-charactes">
+                            <span>character skills</span>
+                        </div>
+                         <div class="imag-abilities">
+                            <img src="img/skills-1-export.png" alt="skills-1">
+                            <img src="img/skills-2t.png" alt="skills-2">
+                            <img src="img/skills-3.png" alt="skills-3">
+                        </div>
+                        <div class="skills-info">
+                            <span>Description of skills</span>
+                            <div class="charactes-skills-info">
+                                <span>All skills for 4 characters are the same</span>
+                            </div>
+                            <div class="abilition-punh-1">
+                                <span>Melee strike hook 1 - skils - the main blow for any of the 4 characters of the game</span>
+                            </div>
+                            <div class="abilition-punh-2">
+                                <span>Melee punch left hand lunge - 2 skills</span>
+                            </div>
+                            <div class="abilition-punh-3">
+                                <span>The third skill is erased from a firearm - it is available provided that it fell out of the enemy with a firearm</span>
+                            </div>
+                        </div>
+                        <div class="Character-History">
+                            <span>
+                                Character History
+                            </span>
+                            <div class="histori-Aria">
+                                <span>
+                                    Yki is a girl who lost her parents during the war with demons. 
+                                    After that, 10 years have passed at the age of 15, orphaned children go to study for various professions. 
+                                    She received the profession of a scout and the profession of a killer.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>          
             </div>
+            <div class="slider" id="slider">
+                <img src="img/img-Charactes-Photo.png" alt="" >
+                <img src="img/img-new-dising 3.png" alt="" >
+                <img src="img/img-new-dising2 1.png" alt="" >
+            </div>
+            <p class="line"></p>
+            <div class="num-caractes" id="num-caractes">
+                <div>
+                    <h1 class="numv">01</h1>
+                    <h1 class="Y-txt" id>CHARACTES: YKI</h1>
+                </div>
             <div class="navigate">
                 <button class="img-button" id="bntPrev"></button>
                 <button class="img-button-right" id="bntNext"></button>
@@ -83,23 +127,22 @@
     <footer class="footer">
         <div class="container">
             <div class="masenger">
-               <a href="https://t.me/+HlaVVYqetsw4ZWEy"><img src="img/free-icon-telegram-2190478.svg" 
-                alt="telegram" class="teleg"></a>
-                <a href="https://www.youtube.com/@mankey-home/featured"><img src="img/free-icon-youtube-142364.svg" 
-                alt="YouTube" class="youtube"></a>
-                <a href="https://vk.com/apgeams"><img src="img/free-icon-vk-142367.svg" 
-                alt="Vk" class="vk"></a>
-                <div class="foot">
+                <div class="teleg">
+                    <a href="https://t.me/+HlaVVYqetsw4ZWEy"><img src="img/free-icon-telegram-2190478.svg" alt="telegram" height="35"></a>
+                    <a href="https://www.youtube.com/@mankey-home/featured"><img src="img/free-icon-youtube-142364.svg" alt="YouTube" height="35"></a>
+                    <a href="https://vk.com/apgeams"><img src="img/free-icon-vk-142367.svg" alt="Vk" height="35"></a>
+                </div>
+                <div class="foother-nav-info">
                     <img src="img/logo.svg" 
                     alt="Aria project games" class="logo-2">
-                    <p class="foot-name-compani">
-                        ARIA PROJECT GAMES
-                    </p>
+                    <p class="foot-name-compani">ARIA PROJECT GAMES</p>
                 </div>
             </div>
         </div>
     </footer> 
+    <script src="Templaet/numbersCharactes.js"></script>
     <script src="Templaet/index.js"></script>
+    <script src="Templaet/InfoCharactes.js"></script>
 </body>
 </html>
 
