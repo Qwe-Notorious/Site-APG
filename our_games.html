@@ -12,10 +12,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Monomaniac+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/our_game.css">
     <link rel="icon" href="img/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="static/aboutUS.css">
-    <link rel="stylesheet" href="static/styleIphone.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Aria Project Games</title>
 </head>
 <body> 
@@ -59,30 +58,40 @@
         </header>
         <main class="img-game">
             <div>
-                <div>
-                    <div class="photo-compani">
-                        <h2>Hello everyone, on this page you can read about our indie studio.</h2>
-                        <span class="revelation">
-                            We are ordinary people who just love video games and programming. 
-                            Yes, I know you thought that we are not ordinary people since we are engaged in the development of video games, 
-                            but I want to tell you it's not so difficult if you figure it out and get into it.
-                        </span>
-                        <div>
-                            <h2>The history of the creation of the indie studio Aria Project Games.</h2>
-                            <span class="histori">
-                                The history of the creation of this studio begins with the moment of our college studies. 
-                                Somehow, in practice, we decided to make our own game for our college, so we gathered a team. 
-                                We have come a long way with this team, but I and my friend and later the game designer liked to develop games.
-                            </span>
-                        </div>
-                        <div>
-                            <h2>Photo album of our team</h2>
-                            <img src="img/img1.png" class="img-comp">
-                            <img src="img/img2.png" class="img-comp1">
-                            <img src="img/img3.png" class="img-comp2">
-                        </div>
+                <div class="photo-our-game-background">
+                    <div>
+                        <button class="game" id="game-1"></button>
+                        <button class="game" id="game-2"></button>
+                        <button class="game" id="game-3"></button>
                     </div>
                 </div>
+                <div class="popup" id="popo">
+                        <div class="info-game-buy">
+                            <button class="close-1" id="close"></button>
+                            <div class="Game-info-bay">
+                                <h1>
+                                  CYBER SOUL: DIGITAL DYSTOPIA  
+                                </h1>
+                            </div>
+                            <div>
+                                <p class="Description-1-name-pos">
+                                    Description of the game
+                                </p>
+                                <div>
+                                    <div class="Slider-Video-present-game">
+                                        <img>
+                                    </div>
+                                </div>
+                                <small class="Description">
+                                    Yki is an ordinary-looking guy who studies at the university, 
+                                    but he has one small feature: his father is the owner of the 
+                                    largest IT company in their city, which was built around the 
+                                    company itself, and here I have a question will yki be able 
+                                    to find a way in his life?
+                                </small>
+                            </div>
+                        </div>        
+                </div> 
             </div>
         </main>
         <footer class="footer">
@@ -100,7 +109,8 @@
                     </div>
                 </div>
             </div>
-        </footer> 
+        </footer>
+        <script src="scripts/InfoGameBuy.js"></script> 
     </div>
 </body>
 </html>

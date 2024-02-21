@@ -1,0 +1,81 @@
+.info-work-compani {
+    font-family: 'Monomaniac One';
+    font-size: 50px;
+    text-align: center;
+}
+
+.ogl-info-work {
+    font-family: 'Bebas Neue';
+    color: black;
+    
+}
+
+.form-work {
+    width: auto;
+    height: auto;
+    box-shadow: -1px 4px 30px 1px rgb(0, 0, 0); 
+    border-radius: 20px;
+}
+
+
+input{
+    display: flex;
+    margin-left: 41.5%;
+}
+
+
+.name-Participant {
+    font-size: 20px;
+    border-radius: 20px;
+    border:0 solid #fff;
+    box-shadow: -1px 4px 16px -2px rgba(102, 102, 102, 0.66);
+    outline: 0;
+    margin-bottom: 2%;
+}
+
+
+.name-Participant:focus{
+    border:0 solid #fff;
+    box-shadow: -1px 4px 16px -1px rgba(2, 2, 2, 0.66);
+}
+
+.name-NickDiscord {
+    font-size: 20px;
+    border-radius: 20px;
+    border:0 solid #fff;
+    box-shadow: -1px 4px 16px -2px rgba(102, 102, 102, 0.66);
+    outline: 0;
+}
+
+.name-NickDiscord:focus {
+    border:0 solid #fff;
+    box-shadow: -1px 4px 16px -1px rgba(2, 2, 2, 0.66);
+}
+
+.send {
+    width: 10%;
+    height: 5%;
+}
+
+.send:hover {
+    background: #272727;
+    
+}
+
+.send:active {
+    transform: scale(0.95);
+}
+
+.text-send {
+    font-family: 'Bebas Neue';
+    font-size: 20px;
+
+    background: linear-gradient(270.94deg, #E14F4F 19.83%, #EF7474 97.62%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.footer {
+    padding-top: 20%;
+}

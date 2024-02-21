@@ -6,7 +6,6 @@ function newFunction() {
     const sliderItems = Array.from(slider.children);
     const btnNext = document.querySelector('#bntNext');
     const btnPrev = document.querySelector('#bntPrev');
-    // const text = document.getElementById('num-caractes');
 
     // Перебераем массив sliderUtems
     sliderItems.forEach(function (slide, index) {
@@ -20,11 +19,6 @@ function newFunction() {
 
         sliderItems[0].setAttribute('data-active', '');
 
-        // textNumsCharactes = {
-        //     num: "02",
-        //     pers: "CHARACTES",
-        //     name: "YKI"
-        // };
 
     });
 

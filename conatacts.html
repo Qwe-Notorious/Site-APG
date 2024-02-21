@@ -9,12 +9,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="static/style.css">
     <link rel="stylesheet" href="static/scroll.CSS">
+    <link rel="stylesheet" href="static/contacts.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Monomaniac+One&display=swap" rel="stylesheet">
     <link rel="icon" href="img/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="static/aboutUS.css">
-    <link rel="stylesheet" href="static/styleIphone.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aria Project Games</title>
 </head>
@@ -56,34 +55,26 @@
                     <p>EN<img src="img/Vector 1.svg" class="vect"></p>
                 </div>
             </div>
-        </header>
+        </header> 
         <main class="img-game">
-            <div>
+            <section class="info-work-compani">
                 <div>
-                    <div class="photo-compani">
-                        <h2>Hello everyone, on this page you can read about our indie studio.</h2>
-                        <span class="revelation">
-                            We are ordinary people who just love video games and programming. 
-                            Yes, I know you thought that we are not ordinary people since we are engaged in the development of video games, 
-                            but I want to tell you it's not so difficult if you figure it out and get into it.
-                        </span>
-                        <div>
-                            <h2>The history of the creation of the indie studio Aria Project Games.</h2>
-                            <span class="histori">
-                                The history of the creation of this studio begins with the moment of our college studies. 
-                                Somehow, in practice, we decided to make our own game for our college, so we gathered a team. 
-                                We have come a long way with this team, but I and my friend and later the game designer liked to develop games.
-                            </span>
-                        </div>
-                        <div>
-                            <h2>Photo album of our team</h2>
-                            <img src="img/img1.png" class="img-comp">
-                            <img src="img/img2.png" class="img-comp1">
-                            <img src="img/img3.png" class="img-comp2">
-                        </div>
+                    <p class="ogl-info-work">
+                        To work in our company, you need to fill out the form at the bottom of the site.
+                    </p>
+                    <div class="form-work">
+                        <form onsubmit="Send(); return false;">
+                            <input class="name-Participant" type="text" id="name" placeholder="Иванов Иван Иванович" name="nmae" required>
+                            <input class="name-NickDiscord" type="text" id="discord" placeholder="Введите ваш ник в дискорде" name="discord" required>
+                            <button class="send" >
+                                <small class="text-send">
+                                    SEND
+                                </small>
+                            </button>
+                        </form>
                     </div>
                 </div>
-            </div>
+            </section>
         </main>
         <footer class="footer">
             <div class="container">
@@ -102,5 +93,7 @@
             </div>
         </footer> 
     </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="scripts/EmailWork.js"></script>
 </body>
 </html>

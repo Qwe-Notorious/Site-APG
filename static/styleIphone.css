@@ -1,7 +1,79 @@
-@media only screen and (max-width: 1200px) {
-    header .container {
+@media only screen and (max-width: 375px) {
+    /* General */
 
-        margin-right: 30%;
+    body {
+        font-family: 'Monomaniac One';
+        font-size: 20px;
+    }
 
-    };
+    .logo {
+        margin-left: 280px;
+        color: #5C90DE;
+        width: 46px;
+        margin-top: 3%;
+    }
+
+    .wrapper {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(122.23deg, #EDC9AF 10.06%, #DEA277 87.62%);
+    } 
+
+    .nav {
+        background-color: #272727;
+        width: 100%;
+        height: 100%;
+    }
+    
+
+    /* About us */
+
+    .photo-compani {
+        box-shadow: -1px 4px 30px 1px rgb(0, 0, 0); 
+        border-radius: 20px;
+    }
+    
+    .revelation {
+        font-size: 18px;
+        color: #000;
+    }
+
+    .img-game {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .histori {
+        font-size: 18px;
+    }
+
+    .img-comp {
+        margin-left: 5%;
+        margin-bottom: 5%;
+        box-shadow: -1px 4px 30px 1px rgb(0, 0, 0); 
+        border-radius: 10px;
+    }
+
+    .img-comp1 {
+        margin-bottom: 5%;
+        box-shadow: -1px 4px 30px 1px rgb(0, 0, 0); 
+        border-radius: 10px;
+    }
+
+    .img-comp2 {
+        margin-left: 5%;
+        margin-top: 5%;
+        margin-bottom: 2%;
+        box-shadow: -1px 4px 30px 1px rgb(0, 0, 0); 
+        border-radius: 10px;
+
+    }
+
+    .footer {
+        /* padding-top: 10%; */
+        width: 100%;
+        height: 100%;
+    }
+
 }
+  
